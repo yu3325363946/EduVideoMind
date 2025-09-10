@@ -1,0 +1,59 @@
+/* 顶部添加字体导入 */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* 全局应用字体 */
+* {
+  font-family: 'Poppins', sans-serif;
+  font-weight: 400; /* 默认使用普通字重 */
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', sans-serif;
+}
+a {
+  text-decoration: none;
+}
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+/* 隐藏所有滚动条，但仍可滚动 */
+*::-webkit-scrollbar {
+  width: 0 !important;
+  height: 0 !important;
+  display: none !important;
+}
+* {
+  scrollbar-width: none !important; /* Firefox */
+  -ms-overflow-style: none !important; /* IE/Edge */
+}
+
+/* 浅色/深色模式 */
+:root {
+  --top-bg-color: #fff;
+  --aside-bg-color: #fff;
+  --bg-border-color: rgba(255, 255, 255, 0.555);
+  --search-bg-color: #f1f2f4;
+  --search-border-color: #f1f2f4;
+  --video-tab-color: #d1d1d1;
+  --main-bg-color: #f1f2f4;
+  --header-bg: #fff;
+  --aside-bg: #f1f2f3;
+  --icon-color: #919191;
+  --upload-color: #fff;
+}
+
+.dark-theme {
+  --bg-color: #000;
+  --top-bg-color: #e6f4ea;
+  --aside-bg-color: rgba(255, 255, 255, 0.555);
+  --search-bg-color: #fff;
+  --search-border-color: #fff;
+  --bg-border-color: #141414;
+  --video-tab-color: #262626;
+  --main-bg-color: #e6f4ea;
+  --header-bg: #1f1f1f;
+  --aside-bg: #252525;
+  --switch-color: #6f6e74;
+}
