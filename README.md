@@ -1,5 +1,5 @@
 # 教育视频解析系统<br>
-简介：这是一个基于 Whisper、DeepSeek 和 BLIP-2 模型的教育视频解析系统。<br>
+##### 简介：这是一个基于 Whisper、DeepSeek 和 BLIP-2 模型的教育视频解析系统。<br>
 - Whisper 负责字幕识别<br>
 - BLIP-2 负责图像分析<br>
 - DeepSeek 通过云 API 提供视频内容分析服务<br>
@@ -53,24 +53,24 @@ Docker<br>
 网络连接（DeepSeek 调用云 API 需要访问网络)<br><br>
 
 #### 步骤 1：拉取镜像<br>
-从我的 GitHub Packages 拉取 Whisper 和 BLIP-2 镜像<br>
+##### 从我的 GitHub Packages 拉取 Whisper 和 BLIP-2 镜像<br>
 docker pull ghcr.io/yu3325363946/whisper:latest<br>
 docker pull ghcr.io/yu3325363946/blip2:latest<br>
 <img width="1214" height="531" alt="image" src="https://github.com/user-attachments/assets/1b14e609-4687-458a-b984-05d8d3cbbd01" /><br><br>
 
 #### 步骤 2：启动容器<br>
- 启动 Whisper 容器（默认端口 9000）<br>
+##### 启动 Whisper 容器（默认端口 9000）<br>
 docker run -d --name whisper-server -p 9000:9000 ghcr.io/yu3325363946/whisper:latest<br>
- 启动 BLIP-2 容器（默认端口 8000)<br>
+##### 启动 BLIP-2 容器（默认端口 8000)<br>
 docker run -d --name blip2-container -p 9001:8000 ghcr.io/yu3325363946/blip2:latest<br>
 <img width="1258" height="518" alt="image" src="https://github.com/user-attachments/assets/30d78a58-3c4a-4dea-981b-ded0ffd1fd1a" /><br><br>
 
 
 #### 步骤 3：启动DeepSeek服务<br>
-DeepSeek 通过云 API 提供内容分析服务，因此无需本地部署。直接使用其提供的 API 接口即可。确保你已获取 API 密钥并配置 API 请求<br>
-##三、前端运行说明<br>
-####1.下载前端依赖<br>
+##### DeepSeek 通过云 API 提供内容分析服务，因此无需本地部署。直接使用其提供的 API 接口即可。确保你已获取 API 密钥并配置 API 请求<br>
+## 三、前端运行说明<br>
+#### 1.下载前端依赖<br>
 pnpm install;
 <br>
-####2. 启动前端服务：<br>
+#### 2. 启动前端服务：<br>
 pnpm dev;<br>
