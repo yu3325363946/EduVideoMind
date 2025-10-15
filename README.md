@@ -5,8 +5,8 @@
 	该项目已将前后端源码及 Docker 镜像上传至 GitHub，用户可以在几分钟内完成部署。
 		
 	一.功能总揽：
-<img width="831" height="361" alt="image" src="https://github.com/user-attachments/assets/773d67a3-90be-4f8b-8242-b292db525b8b" />
-<img width="830" height="680" alt="image" src="https://github.com/user-attachments/assets/b3e60ba8-66cb-4bbf-9397-d27364407b71" />
+    <img width="470" height="715" alt="image" src="https://github.com/user-attachments/assets/4d8a6af5-8fe9-4dc7-ba74-d01d1f28fe14" />
+
 	系统功能需求详述
 	1. 课程资源模块
 	核心功能
