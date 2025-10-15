@@ -8,9 +8,7 @@
 该项目已将前后端源码及 Docker 镜像上传至 GitHub，用户可以在几分钟内完成部署。
 
 一、功能总揽
-
-[系统功能总览图]
-
+<img width="470" height="715" alt="image" src="https://github.com/user-attachments/assets/4d8a6af5-8fe9-4dc7-ba74-d01d1f28fe14" /> 
 系统功能需求详述
 
 1. 课程资源模块
@@ -90,8 +88,8 @@ docker run -d -p 8000:8000 ghcr.io/yu3325363946/blip2:latest
 DeepSeek 通过云 API 提供内容分析服务，因此无需本地部署。直接使用其提供的 API 接口即可。确保你已获取 API 密钥并配置 API 请求
 
 三、前端运行说明
+1.下载前端依赖
 
-bash
 pnpm install
 
 2. 启动前端服务：
