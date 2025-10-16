@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="it.mapper.UserAnswerMapper">
+
+    <!-- 插入答题记录 -->
+    <insert id="insert" parameterType="it.pojo.UserAnswer">
+        INSERT INTO user_answer (
+            user_id, question_id, selected_answer, is_correct, answered_at
+        ) VALUES (
+                     #{userId}, #{questionId}, #{selectedAnswer}, #{isCorrect}, NOW()
+                 )
+    </insert>
+
+    <!-- 查询某用户在某视频中的所有错题（question_id） -->
+    <select id="selectWrongAnswers" resultType="it.pojo.UserAnswer">
+        SELECT ua.*
+        FROM user_answer ua
+                 JOIN practice_question pq ON ua.question_id = pq.id
+        WHERE ua.user_id = #{userId}
+          AND pq.video_id = #{videoId}
+          AND ua.is_correct = FALSE
+    </select>
+
+</mapper>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+        PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+        "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="it.mapper.VideoMetadataMapper">
+
+    <select id="selectAllMetadata" resultType="it.pojo.VideoMetadataDto">
+        SELECT
+        v.id             AS videoId,
+        v.title          AS title,
+        m.cover_url      AS coverUrl,
+        m.duration       AS duration
+        FROM video v
+        JOIN video_metadata m ON v.id = m.video_id
+        ORDER BY v.id ASC
+        LIMIT 3
+    </select>
+
+</mapper>
