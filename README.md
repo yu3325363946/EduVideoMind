@@ -4,6 +4,10 @@
 - BLIP-2 负责图像分析<br>
 - DeepSeek 通过云 API 提供视频内容分析服务<br>
 该项目已将前后端源码及 Docker 镜像上传至 GitHub，用户可以在几分钟内完成部署。<br>
+<img width="1846" height="972" alt="image" src="https://github.com/user-attachments/assets/cba79641-c28c-4d7d-9558-949bd2a8b524" /><br>
+<img width="1912" height="930" alt="image" src="https://github.com/user-attachments/assets/05933408-ae47-44df-9dc7-c8d72bd6b3fe" /><br>
+
+
 ## 一、功能总揽<br>
 <img width="470" height="715" alt="image" src="https://github.com/user-attachments/assets/4d8a6af5-8fe9-4dc7-ba74-d01d1f28fe14" /> <br><br>
 
