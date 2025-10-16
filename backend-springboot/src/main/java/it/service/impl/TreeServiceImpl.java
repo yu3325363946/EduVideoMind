@@ -15,8 +15,8 @@ import java.util.*;
 @Service
 public class TreeServiceImpl implements TreeService {
 
-    private static final String API_KEY = "sk-af18c52322c04684912d86db0fcb2fe2";
-    private static final String API_URL = "https://dashscope.aliyuncs.com/api/v1/services/aigc/text-generation/generation";
+    private static final String API_KEY = "替换为你的deepseekapi";
+    private static final String API_URL = "替换为你的deepseekapi";
 
     @Autowired
     private SubtitleSegmentMapper subtitleSegmentMapper;
