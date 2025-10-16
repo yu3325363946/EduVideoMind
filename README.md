@@ -67,10 +67,16 @@ docker run -d --name blip2-container -p 9001:8000 ghcr.io/yu3325363946/blip2:lat
 
 
 #### 步骤 3：启动DeepSeek服务<br>
-##### DeepSeek 通过云 API 提供内容分析服务，因此无需本地部署。直接使用其提供的 API 接口即可。确保你已获取 API 密钥并配置 API 请求<br>
-## 三、前端运行说明<br>
-#### 1.下载前端依赖<br>
-pnpm install;
-<br>
-#### 2. 启动前端服务：<br>
+##### DeepSeek 通过云 API 提供内容分析服务，因此无需本地部署。直接使用其提供的 API 接口即可。确保你已获取 API 密钥并配置 API 请求<br><br>
+
+## 三、运行说明<br>
+#### 1.启动后端<br>
+在docker中开启容器后，在idea运行后端代码<br>
+<img width="1631" height="644" alt="image" src="https://github.com/user-attachments/assets/f55f67e1-a4ea-4e76-881c-76fa77f4646e" />
+#### 2.下载前端依赖<br>
+pnpm install;<br>
+此处出现版本号即为成功;<br>
+#### 3.启动前端<br>
 pnpm dev;<br>
+此时点击链接即可进入<br>
+<img width="895" height="313" alt="image" src="https://github.com/user-attachments/assets/e07e462d-cc7d-43bf-9974-e02454a0123b" />
